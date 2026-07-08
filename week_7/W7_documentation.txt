@@ -1,0 +1,5 @@
+Bugs identified in the original main.py and provided templates:
+
+1. System Crash (ValueError): The original main.py does not validate user input types. If a customer types a string (e.g., "abc") instead of a number for the price or quantity, the float() and int() functions cause the program to crash.
+2. Logic Bug (Invalid Orders): The original template does not check for negative numbers or zero. A user could input a negative price or negative quantity, which the system would accept as a valid order.
+3. Test Calling Bug: In the provided test template, the test file calls `food_order(10, 2)`. However, the function defined in food_order.py is named `calculate_total()`. The test must be updated to call the correct function.
